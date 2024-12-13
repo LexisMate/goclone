@@ -36,9 +36,29 @@ Copy websites to your computer! Goclone is a utility that allows you to download
 
 ```bash
 # tap
+cd cmd/goclone
+# install tool
+go install
+#cloning
+go clone <url>
+#zipping
+zip -r app_stars_bot.zip app.stars-bot.com
+#staging
+git add app.stars-bot.com app_stars_bot.zip
+#push
+git commit -m "Added cloned website files"
+#done
+git push origin main
+```
+
+<a name="brew"></a>
+
+### Brew
+```bash
+# tap
 brew tap imthaghost/goclone
 # install tool
-brew install goclone
+
 ```
 
 <a name="manual"></a>
